@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Search function coming soon! 🍩");
     });
 
-
     shopButtons.forEach(btn => {
         btn.addEventListener("click", function () {
             let donutName = this.previousElementSibling.innerText;
@@ -52,9 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.toggle("dark-mode");
     });
 
-
 });
-
 
 gsap.to(".text", {
     opacity: 0,
@@ -117,14 +114,13 @@ donutItems.forEach(donut => {
     });
 });
 
-/* JavaScript om menu te openen/sluiten */
-    document.addEventListener("DOMContentLoaded", function() {
-        const menuBtn = document.querySelector(".menu-btn");
-        const menu = document.querySelector(".menu");
+document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.querySelector(".menu-btn");
+    const menu = document.querySelector(".menu");
 
-        menuBtn.addEventListener("click", function() {
-            menu.classList.toggle("active");
-        });
+    menuBtn.addEventListener("click", function () {
+        menu.classList.toggle("active");
     });
+});
 
 
